@@ -1,0 +1,68 @@
+.hidden {
+    display: none;
+}
+
+.nav-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    border-bottom: 2px solid #111111;
+    color: #111111;
+}
+
+.heart {
+    position: absolute;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../imgs/heartUnchecked.png");
+}
+
+#main-fav:checked + label {
+    background-image: url("../imgs/heartChecked.png");
+}
+
+li > input:checked + label {
+    background-image: url("../imgs/heartChecked.png");
+}
+
+/*.item-certificate {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}*/
+
+.certificate-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate-item {
+    position: relative;
+    padding: 13px;
+    margin: 8px;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.button-delete {
+    position: absolute;
+    right: 40px;
+    width: 24px;
+    height: 24px;
+
+    border: none;
+
+    background-image: url(../imgs/trash-2.png);
+    background-size: cover;
+    background-color: white;
+}
+
+.invalid-warning {
+    color: lightcoral;
+}
